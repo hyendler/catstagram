@@ -4,7 +4,7 @@
 
 ### Clone the repo:
 ```sh
-git clone https://github.com/sara-gudeman/gdi-react-redux.git
+git clone https://github.com/hyendler/catstagram.git
 ```
 
 If you would like to save your work on your own GitHub repo, fork it first, then clone the fork.
@@ -25,16 +25,23 @@ https://nodejs.org/en/download/
 
 Verify you are running the correct versions.
 
-### Starting the repo:
+### First time starting the repo:
 Run:
 ```sh
 npm install
 ```
+Then:
 
-After that has completed, run:
+### Starting the server:
 ```sh
 npm start
 ```
 
+### To stop the server:
+Ctrl + C
+
 Once Webpack has finished building, go to [http://localhost:9000/](http://localhost:9000/).
-You should see a page with the text 'Hello GDInsta!'
+
+### Seeing solution files in the browser:
+
+Go to webpack.config.js and follow instructions in the comments to switch out the entry point to in order to see different solutions reflected in the browser.  If you change the entry point, you will need to stop and restart the server.

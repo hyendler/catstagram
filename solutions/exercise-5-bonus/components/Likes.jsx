@@ -8,19 +8,22 @@ class Likes extends Component {
 			liked: false
 		};
 	}
+
 	handleLikeButtonClick = () => {
 		let { numLikes } = this.state;
+
 		if (this.state.liked) {
 			numLikes -= 1;
-		}
-		else {
+		} else {
 			numLikes += 1;
 		}
+
 		this.setState({
 			numLikes: numLikes,
 			liked: !this.state.liked
 		});
 	}
+
 	render() {
 		return (
 			<div className="Likes">

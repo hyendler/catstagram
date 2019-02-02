@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const ImageUploaderForm = () => {
-	return(
-		<form className="ImageUploaderForm">
-			<input />
-			<button>Submit</button>
-		</form>
-	)
+class ImageUploaderForm extends Component {
+    render() {
+        return(
+            <form className="ImageUploaderForm">
+                <input />
+                <button>Submit</button>
+            </form>
+        );
+    }
 }
 
 export default ImageUploaderForm;

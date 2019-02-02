@@ -1,37 +1,37 @@
 // Exercise 2: Set It Up
-	// write a functional component
+	// write a class component
 	// make it a form element with class name ImageUploaderForm
 	// write one input element and button element inside
 	// export default the component!
 
-// Exercise 4: Class It Up
-// Turn Likes from a functional to a class component.
-	 // handle import/inheritance
-	 // add a render method
-	 // change props from function argument to object attribute
 
-// Exercise 6: Get InFormation
+// Exercise 5: Get InFormation
 // Rewrite this component to accept user input
-// When the user inputs a url, the component should log it to the console
-	 // create internal state, to hold the user inputted value
-	 // render a form element containing:
-			// input element with a onChange attribute
-			// button with an onSubmit() attribute
-	 // write a handleChange() function to store the input
-	 // write a handleSubmit() function to print to the console
+// The goal: When the user inputs a url, the component should log it to the console
+    // You might want to read a little bit more about forms here: https://reactjs.org/docs/forms.html
+    // but essentially, there are two parts to this:
+    // 1) the input reflecting it's current value when the input changes
+    // 2) and submitting the form.
+    // For 1), you will need to create an handleChange function and pass it as a prop to the <input> element.
+    // handleChange will set the state with the value of the target of the event passed to it.
+    // For 2) you will need to create a handleSubmit function and pass it as an onClick prop to the button.
+    // handleSubmit will be the one submitting - ie console.log the current url in the state for now.
 
-// Exercise 6: BONUS
+
+// Exercise 5: BONUS
 // Goal: make this form actually upload an image to the feed!
 // When a user inputs a full image url, it should update the
 // feed to include the image as a FeedItem!
+
     // All the data for the photos are located in HomePage -
     // so how do you get data from the user input of the ImageUploaderForm
     // to the HomePage component and update the photo data?
-    // If photos data on the homepage is changing, then you will need to set it state.
-    // And then, in Homepage, you will need to create a function called
-    // handleAddPhoto that updates photos state by accepting a url and creating
-    // a new object in photos data.
-    // Then pass in that function as props to ImageUploaderForm
-    // and when the user submits, call that function with the user submitted url.
+    // First of all the, photo data in HomePage will be updating (somehow, more on that later).  As such, if
+    // data is going to change inside of a component, what should you put it in (hint: internal state!)
+
+    // Then, how are you going to get the new photo url from ImageUploaderForm back to Homepage?
+    // Pass in a function called handleAddPhoto from HomePage to ImageUploaderForm that
+    // takes the url of the photo updates photos state with by creating a new object in the photos data.
+    // Make sure that function is called on handleSubmit in ImageUploaderForm!
 
 import React from 'react';

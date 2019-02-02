@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Likes from './Likes.jsx';
 
-const FeedItem = () => {
-  return (
-    <div className="FeedItem">
-      <img className="Image" />
-      <Likes />
-    </div>
-  );
-};
+class FeedItem extends Component {
+    render() {
+        return (
+            <div className="FeedItem">
+                <img className="Image" />
+                <Likes />
+            </div>
+        );
+    }
+}
 
 export default FeedItem;

@@ -16,6 +16,7 @@ class HomePage extends Component {
 			url: url,
 			likes: 0
 		};
+
 		this.setState((prevState) => {
 			return {
 				photos: prevState.photos.concat([newPhoto])
@@ -25,6 +26,7 @@ class HomePage extends Component {
 
 	render() {
 		const { photos } = data;
+
 		return (
 			<div className="HomePage">
 				<ImageUploaderForm handleAddPhoto={this.handleAddPhoto} />

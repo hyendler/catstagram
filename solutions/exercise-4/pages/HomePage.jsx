@@ -3,9 +3,10 @@ import data from '../../../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList';
 
+const { photos } = data;
+
 class HomePage extends Component {
 	render() {
-		const { photos } = data;
 		return (
 			<div className="HomePage">
 				<ImageUploaderForm />

@@ -1,5 +1,13 @@
 var path = require('path');
 
+// to see the solutions in the browser, switch out the file path at the 'entry' property.
+// For exercise 2 solution, use './solutions/exercise-2/index.js'
+// For exercise 3 solution, use './solutions/exercise-3/index.js'
+// For exercise 4 solution, use './solutions/exercise-4/index.js'
+// For exercise 5 solution, use './solutions/exercise-5/index.js'
+// For exercise 5 bonus solution, use './solutions/exercise-5-bonus/index.js'
+// For main project, use './src/index.js'
+
 module.exports = {
   // entry: webpack's entry file, where webpack will start looking to build it's dependency graph
   entry: './src/index.js',
