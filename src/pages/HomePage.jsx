@@ -16,4 +16,4 @@
     // and when the user submits, call that function with the user submitted url.
 
 import React from 'react';
-import data from '../../../data.json';
+import data from '../../data.json';
